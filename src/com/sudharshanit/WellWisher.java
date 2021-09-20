@@ -5,4 +5,35 @@ public class WellWisher {
 		greeting.greet();
 	}
 
+	public static void main(String[] args) {
+		//AnnonyMours Implementation
+		wish(new Greeting() {
+
+			@Override
+			public void greet() {
+				System.out.println("Hindi:** Namaskar **");
+				
+			}
+			
+		});
+		wish(new Greeting() {
+
+			@Override
+			public void greet() {
+			System.out.println("Telugu: ** Namaskaram");
+				
+			}
+			
+		});
+		wish(new Greeting() {
+
+			@Override
+			public void greet() {
+				System.out.println("English: ** Good Moring **");
+				
+			}
+			
+		});
+		
+	}
 }
